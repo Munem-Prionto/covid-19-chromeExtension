@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<!--   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+
+      <div class="country_wrapper" id="country_container">
+        <h2 class="country_name" id="country-heading">Loading...</h2>
+        <!--  <img src="https://www.countryflags.io/BD/flat/24.png" alt="" srcset="">  -->
+      </div>
+      <div class="world_wrapper" id="world_container">
+        <h2 class="world" id="world-heading">Worldwide 🌐</h2>
+      </div>
+
+      <div class="selector_wrapper">
+        <div class="selector_flex_container">
+          <div class="selected selector_item" id="btn-1">Today <span class="selector_countryCode">(-)</span></div>
+          <div id="btn-2" class="selector_item">All Time <span class="selector_countryCode">(-)</span></div>
+        </div>
+        <div>
+          <div id="btn-3" class="selector_item">Worldwide 🌐</div>
+        </div>
+     
+      </div>
+      
+      <div class="today_wrapper" id="info_container_today">
+        
+        <div class="today_stats">Cases : <span>-</span> </div>
+        <div class="today_stats">Recovered : <span class="green">-</span> </div>
+        <div class="today_stats">Deaths : <span class="red">-</span></div>
+        
+      </div>
+
+      <div class="allTime_wrapper" id="info_container_aT" style="display: none;">
+        
+          <div>Cases : <span id="aT_cases">-</span> </div>
+          <div class="recovered-div">Recovered : <span id="aT_recovered" class="green">-</span> </div>
+          <div class="recovered-p-div"> Recovery Rate : <span id="aT_p_recovered" class="green">0</span>% </div>
+          <div>Deaths : <span id="aT_deaths" class="red">-</span></div>
+          <div>Death Rate : <span id="aT_p_deaths" class="red">0</span>%</div> 
+        
+      </div>
+      <div class="global_wrapper" id="info_container_global" style="display: none;">
+        <div class="global_header global_header-1">
+          <div>Today</div>
+          <div>New Cases : <span>-</span></div>
+          <div>Recovered : <span class="green">-</span></div>
+          <div>Deaths : <span class="red">-</span></div>
+        </div>
+
+        <div class="global_header global_header-2">
+          <div>All Time</div>
+          <div>Total Cases :<span>-</span> </div>
+          <div>Recovered :<span class="green">-</span></div>
+          <div>Deaths : <span class="red">-</span></div> 
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    
+    <script src="./popup.js"></script>
+</body>
+</html>
